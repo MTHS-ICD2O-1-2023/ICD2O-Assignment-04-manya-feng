@@ -32,8 +32,8 @@ function calculate() {
         document.getElementById("toppings").innerHTML = "Error"
     }
 
-    let totalPrice = ( sizePrice + toppingsPrice ) * 0.13 + ( sizePrice + toppingsPrice )
+    let totalPrice = (sizePrice + toppingsPrice) * 1.13
 
-    document.getElementById("total").innerHTML = 
+    document.getElementById("total").innerHTML =
     "Your total will be $" + totalPrice.toFixed(2) + "! Enjoy your meal!"
 }
