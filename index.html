@@ -1,65 +1,66 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <meta charset="utf-8" />
-  <meta name="description" content="Pizza store" />
-  <meta name="keywords" content="mths, icd2o" />
-  <meta name="author" content="Manya" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="./css/style.css" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
-  <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
-  <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
-  <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
-  <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
-  <link rel="manifest" href="site.webmanifest" />
-  <title>Pizza store</title>
-</head>
-<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
-<script src="./js/script.js"></script>
-<!-- Note the addition for the selection component -->
-<script src="./js/germdl-select.js"></script>
-<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
-  <header class="mdl-layout__header">
-    <div class="mdl-layout__header-row">
-      <span class="mdl-layout-title">Pizza store</span>
-    </div>
-  </header>
-  <main class="mdl-layout__content">
-    <div class="right-image">
-      <img src="./images/pizza.png" alt="pizza image">
-    </div>
-    <br />
-    <div class="page-content">Enter the pizza size:</div>
-    <form action="#">
-      <label for="size">Choose a size:</label>
-      <select name="size" id="size">
-        <option value="large">Large</option>
-        <option value="extra large">Extra large</option>
+  <html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="description" content="Pizza store" />
+    <meta name="keywords" content="mths, icd2o" />
+    <meta name="author" content="Manya" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+    <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.indigo-pink.min.css" />
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png" />
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png" />
+    <link rel="manifest" href="site.webmanifest" />
+    <title>Pizza store</title>
+  </head>
+  <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+  <script src="./js/script.js"></script>
+  <!-- Note the addition for the selection component -->
+  <script src="./js/germdl-select.js"></script>
+  <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+    <header class="mdl-layout__header">
+      <div class="mdl-layout__header-row">
+        <span class="mdl-layout-title">Pizza store</span>
+      </div>
+    </header>
+    <main class="mdl-layout__content">
+      <div class="right-image">
+        <img src="./images/pizza.png" alt="pizza image">
+      </div>
+      <br />
+      <div class="page-content">Enter the pizza size:</div>
+      <form action="#">
+        <label for="size">Choose a size:</label>
+        <select name="size" id="size">
+          <option value="large">Large</option>
+          <option value="extra large">Extra large</option>
+        </select>
+        <br><br>
+      <label for="toppings">Choose toppings:</label>
+      <select name="toppings" id="toppings">
+        <option value="1 topping">1 topping</option>
+        <option value="2 toppings">2 toppings</option>
+        <option value="3 toppings">3 toppings</option>
+        <option value="4 toppings">4 toppings</option>
       </select>
       <br><br>
-    <label for="toppings">Choose toppings:</label>
-    <select name="toppings" id="toppings">
-      <option value="1 topping">1 topping</option>
-      <option value="2 toppings">2 toppings</option>
-      <option value="3 toppings">3 toppings</option>
-      <option value="4 toppings">4 toppings</option>
-    </select>
-    <br><br>
-    <input type="submit" value="Submit">
-    </form>
-    <!-- Accent-colored raised button with ripple -->
-    <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
-      onclick="submit()">
-      Submit
-    </button>
-    </form>
-    <br />
-    <br />
-    <div class="page-content-answer">
-      <div id="answer"></div>
+      <input type="submit" value="Submit">
+      </form>
+      <!-- Accent-colored raised button with ripple -->
+      <button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent"
+        onclick="calculate()">
+        Submit
+      </button>
+      </form>
+      <br />
+      <br />
+      <div class="page-content-answer">
+        <div id="size"></div>
+        <div id="toppings"></div>
+        <div id="total"></div>
+      </main>
     </div>
-  </main>
-</div>
-</body>
+  </body>
 </html>
