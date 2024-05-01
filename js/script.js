@@ -26,14 +26,14 @@ function calculate() {
         toppingsPrice = 1.75
     } else if (toppings == "3 toppings") {
         toppingsPrice = 2.50
-    } else if (toppings == "3 toppings") {
+    } else if (toppings == "4 toppings") {
         toppingsPrice = 3.35
     } else {
         document.getElementById("toppings").innerHTML = "Error"
     }
 
-    let totalPrice = ( sizePrice + toppingsPrice ) * 0.13 + ( sizePrice + toppingsPrice )  
+    let totalPrice = ( sizePrice + toppingsPrice ) * 0.13 + ( sizePrice + toppingsPrice )
 
-    document.getElementById("total").innerHTML =
-    "Your total will be $" + totalPrice + "! Enjoy your meal!"
+    document.getElementById("total").innerHTML = 
+    "Your total will be $" + totalPrice.toFixed(2) + "! Enjoy your meal!"
 }
