@@ -6,8 +6,8 @@
 "use strict"
 
 function calculate() {
-    let size = document.getElementById("pizza-size").value; 
-    let toppings = document.getElementById("toppings").value
+    let usersize = document.getElementById("size-container").value; 
+    let usertoppings = document.getElementById("toppings-container").value
 
     let sizePrice = 0
     let toppingsPrice = 0
